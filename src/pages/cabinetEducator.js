@@ -1,16 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
-import NavbarKabinet from "./NavbarKabinet";
+// import NavbarKabinet from "./NavbarKabinet";
 import Kids from "./kids";
 import Rahbarlar from "./Rahbarlar";
 import Teachers1 from "./Teachers1";
-import {
-  FaHome,
-  FaPhoneAlt,
-  FaInstagram,
-  FaTelegramPlane,
-  FaBars,
-} from "react-icons/fa";
+
 import "../App.css";
 import styles from "../css/navbarkids.module.css";
 import PacmanLoader from "react-spinners/PacmanLoader";
@@ -25,7 +19,7 @@ import {
   ContainerOutlined,
   MailOutlined,
 } from "@ant-design/icons";
-import Rahbariyat from "./Rahbariyat";
+// import Rahbariyat from "./Rahbariyat";
 import Cabinet from "./Cabinet";
 export default class CabinetEducator extends Component {
   state = {

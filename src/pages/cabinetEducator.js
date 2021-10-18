@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Switch, Route, Link, Redirect } from "react-router-dom";
+import { BrowserRouter, Switch, Route, NavLink, Redirect } from "react-router-dom";
 // import NavbarKabinet from "./NavbarKabinet";
 import Kids from "./kids";
 import Rahbarlar from "./Rahbarlar";
@@ -89,15 +89,19 @@ export default class CabinetEducator extends Component {
                     )}
                   </Button>
                   <Menu
-                    // style={{ backgroundColor: "black" }}
+                    style={{ backgroundColor: "#ff8080" }}
                     defaultSelectedKeys={["1"]}
                     mode="inline"
                     className="Linkdashboard"
                     theme="dark"
                     inlineCollapsed={this.state.collapsed}
                   >
-                    <Menu.Item key="1" icon={<PieChartOutlined />}>
-                      <Link
+                    <Menu.Item
+                   
+                    key="1" icon={<PieChartOutlined />}
+                    >
+                      <NavLink 
+                     
                         to="/educator"
                         className="akt"
                         style={{
@@ -106,8 +110,8 @@ export default class CabinetEducator extends Component {
                           fontSize: "16px",
                         }}
                       >
-                        <span className="dash"> Dashboard</span>
-                      </Link>
+                        <span className="dash" style={{color:'white'}}> Dashboard</span>
+                      </NavLink>
                     </Menu.Item>
                     <SubMenu
                       key="sub1"
@@ -116,14 +120,19 @@ export default class CabinetEducator extends Component {
                         color: "white",
                         fontWeight: "600",
                         fontSize: "16px",
+                      backgroundColor:'#FF8080'
+                      
                       }}
                       title="Xodimlar"
                     >
                       <Menu.Item
-                        style={{ backgroundColor: "white", color: "#FF8080" }}
+ 
+
+                        
                         key="5"
                       >
-                        <Link
+                        <NavLink 
+                        
                           to="/educator/rahbarlar"
                           style={{
                             color: "#FF8080",
@@ -132,13 +141,16 @@ export default class CabinetEducator extends Component {
                           }}
                         >
                           Rahbarlar
-                        </Link>
+                        </NavLink>
                       </Menu.Item>
                       <Menu.Item
+ 
+
                         style={{ backgroundColor: "white", color: "#FF8080" }}
                         key="6"
                       >
-                        <Link
+                        <NavLink 
+                        
                           to="/educator/tarbiyachilar"
                           style={{
                             color: "#FF8080",
@@ -147,11 +159,14 @@ export default class CabinetEducator extends Component {
                           }}
                         >
                           Tarbiyachilar
-                        </Link>
+                        </NavLink>
                       </Menu.Item>
                     </SubMenu>
-                    <Menu.Item key="2" icon={<DesktopOutlined />}>
-                      <Link
+                    <Menu.Item
+                   
+                    key="2" icon={<DesktopOutlined />}>
+                      <NavLink 
+                      
                         to="/educator/kids"
                         style={{
                           color: "white",
@@ -160,32 +175,9 @@ export default class CabinetEducator extends Component {
                         }}
                       >
                         O'quvchilar
-                      </Link>
+                      </NavLink>
                     </Menu.Item>
 
-                    <Menu.Item
-                      icon={<MailOutlined />}
-                      key="12"
-                      style={{ color: "white", backgroundColor: "#FF8080" }}
-                    >
-                      <button
-                        style={{
-                          border: "none",
-                          backgroundColor: "white",
-                          color: "#F76B6A",
-                          borderRadius: "5px",
-                          padding: "10px 30px",
-                        }}
-                      >
-                        <Link
-                          to="/"
-                          target="_parent"
-                          style={{ color: "#F76B6A", fontWeight: "800" }}
-                        >
-                          Chiqish
-                        </Link>
-                      </button>
-                    </Menu.Item>
                   </Menu>
                 </div>
                 <Switch>

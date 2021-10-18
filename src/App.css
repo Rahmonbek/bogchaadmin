@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.ant-menu,
+.ant-menu-root,
+.ant-menu-inline,
+.ant-menu-dark {
+  background-color: #ff8080 !important;
+}

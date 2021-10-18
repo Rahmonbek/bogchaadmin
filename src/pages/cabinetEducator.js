@@ -127,6 +127,7 @@ export default class CabinetEducator extends Component {
                           to="/educator/rahbarlar"
                           style={{
                             color: "#FF8080",
+                            backgroundColor: "#FF8080",
                             fontWeight: "600",
                             fontSize: "16px",
                           }}

@@ -169,7 +169,7 @@ export default class teachers1 extends Component {
     return (
       <div style={{ padding: "3%" }}>
         <div className={styles.formAdmin}>
-          <h4>Rahbar kiritish</h4>
+          <h4>Tarbiyachi kiritish</h4>
 
           <Form id="formAdmin">
             <Row>

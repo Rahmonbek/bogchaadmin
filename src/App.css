@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+.ant-menu-title-content {
+  background-color: #ff8080 !important;
+}
+.ant-menu-title-content a {
+  color: white !important;
+  background-color: #ff8080 !important;
+}
+.dash {
+  color: white !important;
+}
+.ant-menu-item,
+.ant-menu-item-active,
+.ant-menu-item-selected:active {
+  background-color: #ff8080 !important;
+}
+.ant-menu,
+.ant-menu-root,
+.ant-menu-inline,
+.ant-menu-dark {
+  background-color: #ff8080 !important;
+}

@@ -81,3 +81,63 @@ export const editKg = (data) => {
   };
   return httpRequest(config);
 };
+export const getNews = () => {
+  var config = {
+    url: `${url}/yangilik/`,
+    method: "get",
+  };
+  return httpRequest(config);
+};
+export const createNews = (dataS) => {
+  var config = {
+    url: `${url}/yangilik/`,
+    method: "post",
+    data: dataS,
+  };
+  return httpRequest(config);
+};
+export const deleteNews = (id) => {
+  var config = {
+    url: `${url}/yangilik/${id}/`,
+    method: "delete",
+  };
+  return httpRequest(config);
+};
+export const editNews = (dataS, id) => {
+  var config = {
+    url: `${url}/yangilik/${id}/`,
+    method: "patch",
+    data: dataS,
+  };
+  return httpRequest(config);
+};
+export const getTadbir = () => {
+  var config = {
+    url: `${url}/tadbirlar/`,
+    method: "get",
+  };
+  return httpRequest(config);
+};
+export const createTadbir = (dataS) => {
+  var config = {
+    url: `${url}/tadbirlar/`,
+    method: "post",
+    data: dataS,
+  };
+  return httpRequest(config);
+};
+export const deleteTadbir = (id) => {
+  var config = {
+    url: `${url}/tadbirlar/${id}/`,
+    method: "delete",
+  };
+  return httpRequest(config);
+};
+export const editTadbir = (dataS, id) => {
+  var config = {
+    url: `${url}/tadbirlar/${id}/`,
+    method: "patch",
+    data: dataS,
+  };
+  return httpRequest(config);
+};

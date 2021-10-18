@@ -172,8 +172,8 @@ export default class CabinetEducator extends Component {
                       <button
                         style={{
                           border: "none",
-                          backgroundColor: "white",
-                          color: "#F76B6A",
+                          backgroundColor: "#ff8080",
+                          color: "white",
                           borderRadius: "5px",
                           padding: "10px 30px",
                         }}
@@ -181,7 +181,10 @@ export default class CabinetEducator extends Component {
                         <Link
                           to="/"
                           target="_parent"
-                          style={{ color: "#F76B6A", fontWeight: "800" }}
+                          style={{
+                            backgroundColor: "#F76B6A",
+                            fontWeight: "800",
+                          }}
                         >
                           Chiqish
                         </Link>

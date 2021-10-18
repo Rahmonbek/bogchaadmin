@@ -27,18 +27,18 @@ export default class CabinetEducator extends Component {
     loader: true,
     stl: null,
   };
-  style = () => {
-    var stl = this.state.stl;
-    if (stl == null) {
-      document.querySelector("dash").style.color = "#FF8080";
-      document.querySelector("dash").style.backgroundColor = "white";
-      this.setState({
-        stl: "1",
-      });
-    } else {
-      document.querySelector("dash").style.color = "white";
-    }
-  };
+  // style = () => {
+  //   var stl = this.state.stl;
+  //   if (stl == null) {
+  //     document.querySelector("dash").style.color = "#FF8080";
+  //     document.querySelector("dash").style.backgroundColor = "white";
+  //     this.setState({
+  //       stl: "1",
+  //     });
+  //   } else {
+  //     document.querySelector("dash").style.color = "white";
+  //   }
+  // };
   componentDidMount() {
     setInterval(() => {
       this.setState({

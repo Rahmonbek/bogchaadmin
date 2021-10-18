@@ -36,12 +36,19 @@
     transform: rotate(360deg);
   }
 }
+.btnclose {
+  background-color: #ff8080 !important;
+  color: white !important;
+}
 .ant-menu-title-content {
   background-color: #ff8080 !important;
 }
 .ant-menu-title-content a {
   color: white !important;
   background-color: #ff8080 !important;
+}
+.ant-menu-title-content a:hover {
+  border-bottom: 2px solid white;
 }
 .dash {
   color: white !important;

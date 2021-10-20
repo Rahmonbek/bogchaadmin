@@ -181,7 +181,7 @@ export default class Educatortadbirlar extends Component {
                     value={this.state.address}
                     onChange={this.onaddressName}
                     type="address"
-                    placeholder="Addressni kiriting"
+                    placeholder="Manzilni kiriting"
                   />
                 </Form.Group>
                 <Form.Group
@@ -238,9 +238,9 @@ export default class Educatortadbirlar extends Component {
                     </li> */}
 
                     <li style={{ fontWeight: "600" }}>Sarlavha:{item.name}</li>
-                    <li>Manzil:{item.address}</li>
-                    <li>Ma'lumot:{item.text}</li>
-                    <li>Sana:{item.date}</li>
+                    <li style={{ fontWeight: "600" }}>Manzil:{item.address}</li>
+                    <li style={{ fontWeight: "600" }}>Ma'lumot:{item.text}</li>
+                    <li style={{ fontWeight: "600" }}>Sana:{item.date}</li>
                   </ul>
                 </Card.Text>
                 <Button

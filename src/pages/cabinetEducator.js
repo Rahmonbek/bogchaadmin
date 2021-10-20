@@ -26,6 +26,8 @@ import {
   DesktopOutlined,
   ContainerOutlined,
   MailOutlined,
+  HistoryOutlined,
+  SmileOutlined,
 } from "@ant-design/icons";
 // import Rahbariyat from "./Rahbariyat";
 import Cabinet from "./Cabinet";
@@ -172,7 +174,7 @@ export default class CabinetEducator extends Component {
                         O'quvchilar
                       </NavLink>
                     </Menu.Item>
-                    <Menu.Item key="4" icon={<DesktopOutlined />}>
+                    <Menu.Item key="4" icon={<HistoryOutlined />}>
                       <NavLink
                         to="/educator/yangiliklar"
                         style={{
@@ -184,7 +186,7 @@ export default class CabinetEducator extends Component {
                         Yangiliklar
                       </NavLink>
                     </Menu.Item>
-                    <Menu.Item key="5" icon={<DesktopOutlined />}>
+                    <Menu.Item key="5" icon={<SmileOutlined />}>
                       <NavLink
                         to="/educator/tadbirlar"
                         style={{

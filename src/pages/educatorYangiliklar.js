@@ -207,18 +207,18 @@ export default class EducatorYangiliklar extends Component {
               <Card.Body>
                 <Card.Title>Yangiliklar</Card.Title>
                 <Card.Text>
-                  <ul>
+                  <ul style={{ fontWeight: "600" }}>
                     {/* <li>
                     <img
                         src={item.image}
                         style={{ width: "200px", height: "200px" }}
                       ></img>
                     </li> */}
-                    <li>{item + 1}</li>
-                    <li>{item.title}</li>
 
-                    <li>{item.text}</li>
-                    <li>{item.date}</li>
+                    <li style={{ fontWeight: "600" }}>Sarlavha:{item.title}</li>
+
+                    <li style={{ fontWeight: "600" }}>Ma'lumot:{item.text}</li>
+                    <li style={{ fontWeight: "600" }}>Sana:{item.date}</li>
                   </ul>
                 </Card.Text>
                 <Button

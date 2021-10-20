@@ -5,6 +5,7 @@ import { PacmanLoader } from 'react-spinners'
 import { url } from '../host/Host'
 import './form.css'
 import styles from "../css/navbarkids.module.css";
+import { message } from 'antd'
 
 export default class Verify extends Component {
 state={
@@ -27,6 +28,9 @@ verifyLogin=()=>{
   axios.post(`${url}/dj-rest-auth/login/`,{username, password}).then(res=>{
     this.setState({login:'email', username:username, loader:false})
    window.localStorage.setItem("token", res.data.key)
+  }).catch(err=>{
+    this.setState({loader:false})
+    message.error("Login yoki parol xato iltimos tekshirib qaytatdan urinib ko'ring")
   })
   }
   kirish=()=>{
@@ -37,6 +41,9 @@ verifyLogin=()=>{
     axios.post(`${url}/dj-rest-auth/login/`,{username, password}).then(res=>{
       this.setState({login:'kirish', loader:false})
      window.localStorage.setItem("token", res.data.key)
+    }).catch(err=>{
+      this.setState({loader:false})
+      message.error("Login yoki parol xato iltimos tekshirib qaytatdan urinib ko'ring")
     })
     }
     verifyEmail=()=>{

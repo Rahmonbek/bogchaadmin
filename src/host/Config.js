@@ -67,7 +67,7 @@ export const editXodim = (dataS, id) => {
 
 export const getKg = () => {
   var config = {
-    url: `${url}/kg/${idBogcha}/`,
+    url: `${url}/kg-info/${idBogcha}/`,
     method: "get",
   };
   return httpRequest(config);
@@ -138,6 +138,18 @@ export const editTadbir = (dataS, id) => {
     url: `${url}/tadbirlar/${id}/`,
     method: "patch",
     data: dataS,
+  };
+  return httpRequest(config);
+};
+
+export const changePassword = (data, token) => {
+  var config = {
+    headers: {
+      Authorization: `token ${token}`,
+    },
+    url: `${url}/dj-rest-auth/password/change/`,
+    method: "post",
+    data: data,
   };
   return httpRequest(config);
 };
